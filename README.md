@@ -17,7 +17,6 @@ dependencies:
 
 Sample command
 ```
-git clone https://github.com/KyleLeeKorea/QE_DEMO 
 sudo apt-get install
 sudo apt update
 sudo apt install nodejs
