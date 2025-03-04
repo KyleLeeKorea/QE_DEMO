@@ -28,6 +28,10 @@ tar -xvf *tgz
 For more information on installation requirements for {+qe+}, see [Installation Requirements](https://www.mongodb.com/docs/manual/core/queryable-encryption/install/#std-label-qe-install).
 
 ## Configure Your Environment
+- Clone Git
+```
+git clone https://github.com/KyleLeeKorea/QE_DEMO 
+```
 
 - Please edit the contents of the credential.js according to each respective value.
 ```
