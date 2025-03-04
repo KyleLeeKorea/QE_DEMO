@@ -24,8 +24,6 @@ sudo apt install npm
 wget https://downloads.mongodb.com/linux/mongo_crypt_shared_v1-linux-x86_64-enterprise-ubuntu2404-8.0.5.tgz
 tar -xvf *tgz
 ```
-For more information on installation requirements for {+qe+}, see [Installation Requirements](https://www.mongodb.com/docs/manual/core/queryable-encryption/install/#std-label-qe-install).
-
 ## Configure Your Environment
 - Clone Git
 ```
