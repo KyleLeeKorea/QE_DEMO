@@ -19,9 +19,17 @@ For more information on installation requirements for {+qe+}, see [Installation 
 
 ## Configure Your Environment
 
-1. Copy the `env_template` file in the root of the project directory to a file named `.env`.
+1. Please edit the contents of the credential.js according to each respective value.
 
-1. Replace the placeholder values in the `.env` file with your own credentials.
+  // Mongo Paths + URI
+  MONGODB_URI: "<your MongoDB URI here>",
+  SHARED_LIB_PATH: "<path to crypt_shared library>",
+
+  // AWS Credentials
+  AWS_ACCESS_KEY_ID: "<your AWS access key ID here>",
+  AWS_SECRET_ACCESS_KEY: "<your AWS secret access key here>",
+  AWS_KEY_REGION: "<your AWS key region>",
+  AWS_KEY_ARN: "<your AWS key ARN>",
 
 ## Run the App
 
