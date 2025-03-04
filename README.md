@@ -20,7 +20,7 @@ For more information on installation requirements for {+qe+}, see [Installation 
 ## Configure Your Environment
 
 1. Please edit the contents of the credential.js according to each respective value.
-
+```
   // Mongo Paths + URI
   MONGODB_URI: "<your MongoDB URI here>",
   SHARED_LIB_PATH: "<path to crypt_shared library>",
@@ -30,7 +30,7 @@ For more information on installation requirements for {+qe+}, see [Installation 
   AWS_SECRET_ACCESS_KEY: "<your AWS secret access key here>",
   AWS_KEY_REGION: "<your AWS key region>",
   AWS_KEY_ARN: "<your AWS key ARN>",
-
+```
 ## Run the App
 
 1. In a shell, navigate to the project root directory.
