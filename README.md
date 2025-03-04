@@ -15,11 +15,21 @@ dependencies:
 - Node.js
 - npm
 
+Sample command
+```
+git clone https://github.com/KyleLeeKorea/QE_DEMO 
+sudo apt-get install
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+wget https://downloads.mongodb.com/linux/mongo_crypt_shared_v1-linux-x86_64-enterprise-ubuntu2404-8.0.5.tgz
+tar -xvf *tgz
+```
 For more information on installation requirements for {+qe+}, see [Installation Requirements](https://www.mongodb.com/docs/manual/core/queryable-encryption/install/#std-label-qe-install).
 
 ## Configure Your Environment
 
-1. Please edit the contents of the credential.js according to each respective value.
+- Please edit the contents of the credential.js according to each respective value.
 ```
   // Mongo Paths + URI
   MONGODB_URI: "<your MongoDB URI here>",
@@ -45,9 +55,10 @@ For more information on installation requirements for {+qe+}, see [Installation 
    > When using Node.js driver version `6.0.0` or later,
    > `mongodb-client-encryption` must have the same major version number as the driver.
 
-1. In `queryable-encryption-tutorial.js`, replace the placeholder `<Your KMS
-Provider Name>` with a valid KMS provider name.
-
-1. Run `node queryable-encryption-tutorial` to start the app.
-
-1. If successful, the application will print a document to the console.
+1. Run as below
+```
+node make_data_key.js
+node load_data.js
+node equal_query.js
+node range_query.js
+```
