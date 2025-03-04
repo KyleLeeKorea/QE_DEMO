@@ -43,17 +43,7 @@ For more information on installation requirements for {+qe+}, see [Installation 
 ```
 ## Run the App
 
-1. In a shell, navigate to the project root directory.
-
-1. Run `npm install` to install the Node.js driver and
-   `mongodb-client-encryption` packages.
-
-   > **Note:** `mongodb-client-encryption` must be version 2.8.0 or later.
-   > For more information on compatible package versions, see the
-   > [Driver Compatibility Table](https://www.mongodb.com/docs/manual/core/queryable-encryption/reference/compatibility/).
-   >
-   > When using Node.js driver version `6.0.0` or later,
-   > `mongodb-client-encryption` must have the same major version number as the driver.
+1. In a shell, navigate to the project root directory(QE_DEMO).
 
 1. Run as below
 ```
