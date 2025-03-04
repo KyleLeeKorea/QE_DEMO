@@ -1,7 +1,7 @@
 const { MongoClient, Binary } = require("mongodb");
 const { ClientEncryption } = require("mongodb-client-encryption");
 
-const keyVaultDatabase = "encryption";
+const keyVaultDatabase = "Never_Delete_Key_Vault";
 const keyVaultCollection = "__keyVault";
 const keyVaultNamespace = `${keyVaultDatabase}.${keyVaultCollection}`;
 const secretDB = "medicalRecords";
