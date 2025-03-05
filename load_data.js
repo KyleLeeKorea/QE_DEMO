@@ -3,7 +3,7 @@ const { getCredentials } = require("./credentials");
 credentials = getCredentials();
 
 // start-key-vault
-const eDB = "encryption";
+const eDB = "Never_Delete_KeyVault";
 const eKV = "__keyVault";
 const keyVaultNamespace = `${eDB}.${eKV}`;
 // end-key-vault
