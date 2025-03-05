@@ -1,7 +1,7 @@
 const { MongoClient, Binary } = require("mongodb");
 const { ClientEncryption } = require("mongodb-client-encryption");
 
-const keyVaultDatabase = "Never_Delete_Key_Vault";
+const keyVaultDatabase = "Never_Delete_KeyVault";
 const keyVaultCollection = "__keyVault";
 const keyVaultNamespace = `${keyVaultDatabase}.${keyVaultCollection}`;
 const secretDB = "medicalRecords";
@@ -99,6 +99,12 @@ async function run() {
           path: "patientRecord.billing",
           bsonType: "object",
         },
+        {
+          keyId: dek5,
+          path: "billAmount",
+          bsonType: "int",
+          queries: { queryType: "range" },
+        },
       ],
     },
   };
@@ -124,3 +130,5 @@ async function run() {
   await keyVaultClient.close();
   await encClient.close();
 }
+
+run().catch(console.dir);
